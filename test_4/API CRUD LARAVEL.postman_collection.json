@@ -1,0 +1,619 @@
+{
+	"info": {
+		"_postman_id": "eb5e2821-b90b-4714-9257-5a0dafcb9bb1",
+		"name": "API CRUD LARAVEL",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "14349306"
+	},
+	"item": [
+		{
+			"name": "Karyawan - inquiryKaryawan",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id_karyawan\":\"1\",\n    \"nik_karyawan\":\"1234567\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/api/v1/inquiryKaryawan",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"inquiryKaryawan"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Karyawan - inquiryListKaryawan",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id_karyawan\":\"\",\n    \"nik_karyawan\":\"\",\n    \"nama_karyawan\":\"\",\n    \"tanggal_lahir\":\"\",\n    \"alamat\":\"\",\n    \"id_jabatan\":\"\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/api/v1/inquiryListKaryawan",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"inquiryListKaryawan"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Karyawan - insertDataKaryawan",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nik_karyawan\":\"1234510\",\n    \"nama_karyawan\":\"Firmawan Adi Suseno\",\n    \"tanggal_lahir\":\"1994-01-01\",\n    \"alamat\":\"Bintaro\",\n    \"id_jabatan\":\"1\",\n    \"id_dept\":\"1\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/api/v1/insertDataKaryawan",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"insertDataKaryawan"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Karyawan - deleteDataKaryawan",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id_karyawan\":\"\",\n    \"nik_karyawan\":\"1234510\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/api/v1/deleteDataKaryawan",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"deleteDataKaryawan"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Karyawan - updateDataKaryawan",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nik_karyawan\":\"1234567\",\n    \"nama_karyawan\":\"Dwi Sulistyo\",\n    \"tanggal_lahir\":\"1997-05-25\",\n    \"alamat\":\"Bekasi Timur\",\n    \"id_jabatan\":\"1\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/api/v1/updateDataKaryawan",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"updateDataKaryawan"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Department - inquiryDepartment",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id_dept\":\"1\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/api/v1/inquiryDepartment",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"inquiryDepartment"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Department - inquiryListDepartment",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id_dept\":\"\",\n    \"nama_dept\":\"IT\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/api/v1/inquiryListDepartment",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"inquiryListDepartment"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Department - insertDataDepartment",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nama_dept\":\"HRGA\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/api/v1/insertDataDepartment",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"insertDataDepartment"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Department - updateDataDepartment",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id_dept\":\"2\",\n    \"nama_dept\":\"HRGG\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/api/v1/updateDataDepartment",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"updateDataDepartment"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Department - deleteDataDepartment",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id_dept\":\"2\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/api/v1/deleteDataDepartment",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"deleteDataDepartment"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Level - inquiryLevel",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id_level\":\"1\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/api/v1/inquiryLevel",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"inquiryLevel"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Level - inquiryListLevel",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id_level\":\"\",\n    \"nama_level\":\"staff\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/api/v1/inquiryListLevel",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"inquiryListLevel"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Level - deleteDataLevel",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id_level\":\"1\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/api/v1/deleteDataLevel",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"deleteDataLevel"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Level - updateDataLevel",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nama_level\":\"Associate Junior 3\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/api/v1/insertDataLevel",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"insertDataLevel"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Jabatan - inquiryJabatan",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id_jabatan\":\"1\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/api/v1/inquiryJabatan",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"inquiryJabatan"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Jabatan - inquiryListJabatan",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id_jabatan\":\"\",\n    \"nama_jabatan\":\"\",\n    \"id_level\":\"\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/api/v1/inquiryListJabatan",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"inquiryListJabatan"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Jabatan - deleteDataJabatan",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id_jabatan\":\"2\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/api/v1/deleteDataJabatan",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"deleteDataJabatan"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Jabatan - insertDataJabatan",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nama_jabatan\":\"Staff HRD\",\n    \"id_level\":\"3\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/api/v1/insertDataJabatan",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"insertDataJabatan"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Jabatan - updateDataJabatan",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id_jabatan\":\"1\",\n    \"nama_jabatan\":\"Staff Kacung\",\n    \"id_level\":\"3\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/api/v1/updateDataJabatan",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"updateDataJabatan"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "nomor_satu",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"kode_tipe\":\"1\",\n    \"jumlah_baris\":\"5\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/api/v1/nomor_satu",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"nomor_satu"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "nomor_dua",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"angka\":\"1525500\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/api/v1/nomor_dua",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"nomor_dua"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
